@@ -24,6 +24,7 @@
         width: 100vw;
         height: 10vh;
         background-color: rgb(141, 219, 158);
+        box-shadow: 5px 5px 5px rgb(74, 180, 139);
     }
     .ul_pc{
         display: flex;
@@ -82,9 +83,9 @@
     }
     .adresse{
         margin-top: 5vh;
+        text-align: center;
     }
     .in{
-        border: 1px solid black;
         padding: 6%;
         border-radius: 3px;
     }
@@ -94,13 +95,64 @@
         font-family: 'Quattrocento Sans', sans-serif;
         font-weight: lighter;
     }
+    .a_button{
+        display: block;
+        margin: 0 auto;
+       
+    }
+    button{
+        margin-top: 5vh;
+        width: 250px;
+        height: 70px;
+        background-color: rgb(116, 46, 86);
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
     /* PRATIQUE */
     #pratique{
-        margin-top: 10vh;
-        height: 90vh;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title{
+        font-size: 25px;
+        margin-top: 2vh;
+    }
+    hr{
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .under_title{
+        font-size: 25px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .pra{
+        font-size: 25px;
     }
 }
 @media only screen and (max-width: 780px) {
+    .under_title{
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    hr{
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
     .a{
         color: white;
         font-size: 1.5em;
@@ -239,6 +291,22 @@
     transition: ease-in-out 800ms;
     }
     /* ACCUEIL */
+    .a_button{
+        display: block;
+        margin: 0 auto;
+       
+    }
+    button{
+        margin-top: 5vh;
+        width: 250px;
+        height: 40px;
+        background-color: rgb(116, 46, 86);
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
     h2{
         font-size: 20px;
         text-align: center;
@@ -268,16 +336,24 @@
     }
     .adresse{
         margin-top: 2vh;
+        text-align: center;
     }
     .in{
         border: none;
-        padding: 0;
-        
+        padding: 0;    
     }
     p{
         font-size: 14px;
         text-align: center;
         font-family: 'Quattrocento Sans', sans-serif;
         font-weight: lighter;
+    }
+     /* PRATIQUE */
+     #pratique{
+        margin-top: 5vh;
+        height: 90vh;
+    }
+    .pra{
+        font-size: 15px;;
     }
 }
