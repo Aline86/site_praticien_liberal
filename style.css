@@ -126,6 +126,11 @@
         object-fit: cover;
         margin: 0 auto;
     }
+    .tel{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 2vh;
+    }
     /* PRATIQUE */
     #pratique{
         height: 100vh;
@@ -136,7 +141,7 @@
         justify-content: center;
     }
     .title{
-        font-size: 25px;
+        font-size: 35px;
         margin-top: 2vh;
     }
     hr{
@@ -148,9 +153,32 @@
         font-size: 25px;
         margin-bottom: 15px;
         margin-top: 15px;
+        font-family: 'Quattrocento Sans', sans-serif;
     }
     .pra{
-        font-size: 25px;
+        font-size: 24px;
+        font-family: 'Quattrocento Sans', sans-serif;
+    }
+    /* THERAPIE */
+    #therapie{
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .child, .teenager, .adult{
+        width: 33%;
+        padding: 2%;
+    }
+    .the{
+        font-size: 30px;
     }
 }
 @media only screen and (max-width: 780px) {
@@ -211,10 +239,13 @@
     margin: 15px;
     z-index: 99;
     padding: 10px;
-    float: right;
+    
+    position: fixed;
+    right: 5px;
     }
 
     .navicon {
+        
     cursor: pointer;
     display: block;
     width: 45px;
@@ -253,6 +284,7 @@
     }
 
     .menu-icon {
+    
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -375,12 +407,39 @@
         object-fit: cover;
         margin: 0 auto;
     }
+    .tel{
+        margin-top: 2vh;
+        font-size: 20px;
+        font-weight: bold;
+    }
      /* PRATIQUE */
      #pratique{
-        margin-top: 5vh;
-        height: 90vh;
+        margin-top: 2vh;
+        height: auto;
     }
     .pra{
-        font-size: 15px;;
+        font-size: 15px;
+    }
+    /* THERAPIE */
+    #therapie{
+        margin-top: 5vh;
+        height: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .child, .teenager, .adult{
+        width: 100%;
+        padding: 2%;
+    }
+    .the{
+        font-size: 20px;
     }
 }
