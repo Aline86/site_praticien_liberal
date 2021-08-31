@@ -180,6 +180,25 @@
     .the{
         font-size: 30px;
     }
+    /* CABINET */
+    #cabinet{
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .pic{
+        width: 42%;
+        margin: 2%;
+        background-color: rgb(141, 219, 158);
+        height: 250px;
+        margin: 0 auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
 }
 @media only screen and (max-width: 780px) {
     .under_title{
@@ -190,11 +209,13 @@
     }
     .title{
         font-size: 20px;
+       
+        margin-top: 5vh;
     }
     hr{
         width: 60%;
         margin: 0 auto;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
     }
     .a{
         color: white;
@@ -422,6 +443,7 @@
     }
     /* THERAPIE */
     #therapie{
+        height: auto;
         margin-top: 5vh;
         height: auto;
         text-align: center;
@@ -441,5 +463,21 @@
     }
     .the{
         font-size: 20px;
+    }
+
+    /* CABINET */
+    #cabinet{
+        height: auto;
+        text-align: center;
+       
+    }
+    
+    .pic{
+        width: 100%;
+        background-color: rgb(141, 219, 158);
+        height: 250px;
+        margin: 0 auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
 }
