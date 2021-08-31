@@ -23,7 +23,7 @@
         position: fixed;
         width: 100vw;
         height: 10vh;
-        background-color: black;
+        background-color: rgb(141, 219, 158);
     }
     .ul_pc{
         display: flex;
@@ -218,7 +218,7 @@
     width: 100%;
     min-height: 50vh;
     color: white;
-    background-color: black;
+    background-color: rgb(141, 219, 158);
     display: none;
     display: flex;
     align-items: center;
