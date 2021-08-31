@@ -121,6 +121,7 @@
         height: 70vh;
         background-color: white;
         margin: 0 auto;
+        margin-top: 0;
         position: relative;
         display: flex;
         flex-direction: column;
