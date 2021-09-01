@@ -37,7 +37,7 @@ function myFunction(){
 }
 
 function setHref(idhref, idcontainer){
-    if (window.pageYOffset + "15px" >= document.getElementById(idcontainer).offsetTop ) {
+    if (window.pageYOffset + 10 >= document.getElementById(idcontainer).offsetTop) {
         document.querySelectorAll('.a').forEach(elem =>{
             elem.style.fontWeight = "lighter"
             elem.style.textDecoration = "none"
