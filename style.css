@@ -18,7 +18,7 @@
         width: 75px;
         height: 75px;
         border-radius: 50%;
-        margin-top: 10vh;
+        margin-top: 15vh;
     }
     .column{
         display: flex;
@@ -216,6 +216,37 @@
     .trois{
         margin-top: 5vh;;
     }
+    /* CONTACT */
+    #contact{
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .inner{
+        background-color: white;
+        width: 33%;
+        height: auto;
+        margin: 2%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 27.5vh;
+        border-radius: 3px;
+    }
+    .contact{
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    .fas{
+        font-size: 30px;
+    }
+    
 }
 @media only screen and (max-width: 780px) {
     .rond{
@@ -499,5 +530,34 @@
         margin: 0 auto;
         margin-top: 5vh;
         margin-bottom: 5vh;
+    }
+    /* CONTACT */
+    #contact{
+        height: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .inner{
+        background-color: white;
+        width: 100%;
+        height: auto;
+        margin: 2%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+    }
+    .contact{
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+    .fas{
+        font-size: 25px;
     }
 }
