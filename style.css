@@ -217,6 +217,10 @@
     }
     .the{
         font-size: 1.4em;
+        
+    }
+    .forma{
+        text-align: left;
     }
     /* CABINET */
     #cabinet{
