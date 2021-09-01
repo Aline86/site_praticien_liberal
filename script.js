@@ -20,14 +20,14 @@ window.onscroll = function() {
 function myFunction(){
     var container = document.querySelector(".container");
    
-    if (window.pageYOffset <= container.offsetTop ) {
+    if (window.pageYOffset < container.offsetTop ) {
         document.querySelector(".nav_pc").style.backgroundColor="rgb(17, 112, 37)"
         document.querySelector(".nav_pc").style.backgroundImage = "none"
     }
     else
     {
         document.querySelector(".nav_pc").style.backgroundImage = "url('menu.jpg')"
-       
+        document.querySelector(".nav_pc").style.transition = "backgroundImage 5s ease-in-out 1s";
     }
     setHref("accueil", "background")
     setHref("practice", "pratique")
@@ -37,7 +37,6 @@ function myFunction(){
 }
 
 function setHref(idhref, idcontainer){
-    console.log(idcontainer)
     if (window.pageYOffset >= document.getElementById(idcontainer).offsetTop ) {
         document.querySelectorAll('.a').forEach(elem =>{
             elem.style.fontWeight = "lighter"
