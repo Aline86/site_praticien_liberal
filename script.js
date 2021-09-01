@@ -33,7 +33,7 @@ function myFunction(){
     setHref("practice", "pratique")
     setHref("therapy", "therapie")
     setHref("cabi", "cabinet")
-    setHref("cont", "contact")
+    setHref("cont", "contact2")
 }
 
 function setHref(idhref, idcontainer){
