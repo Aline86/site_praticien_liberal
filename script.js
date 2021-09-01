@@ -41,7 +41,7 @@ function setHref(idhref, idcontainer){
         document.querySelectorAll('.a').forEach(elem =>{
             elem.style.fontWeight = "lighter"
             elem.style.textDecoration = "none" 
-            elem.style.hover = "text-decoration: white"
+           
         })
         document.getElementById(idhref).style.fontWeight = "bold"
         document.getElementById(idhref).style.textDecoration = "underline 2px"
