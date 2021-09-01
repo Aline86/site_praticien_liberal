@@ -13,8 +13,6 @@ function init() {
     })
 }
 window.onscroll = function() {
-
-
     myFunction()
 };
 
