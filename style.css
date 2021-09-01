@@ -16,17 +16,19 @@
         height: 30px;
         border-top: 2px solid black;
         border-left: 2px solid black;
-     
+        position: absolute;
+        margin-right: 5%;
+       
     }
     .englobe::after{
         content: "";
         display: block;
+        position: absolute;
         width: 30px;
         height: 30px;
         border-bottom: 2px solid black;
         border-right: 2px solid black;
-        margin-left: 98%;
-
+        margin-left: 90%;
 
     }
     .docto{
