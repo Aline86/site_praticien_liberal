@@ -9,29 +9,6 @@
     margin: 0 auto;
 }
 @media only screen and (min-width: 780px) {
-    .englobe::before{
-        content: "";
-        display: block;
-        width: 30px;
-        height: 30px;
-        border-top: 2px solid black;
-        border-left: 2px solid black;
-        position: absolute;
-        margin-right: 5%;
-        z-index: -9999;
-    }
-    .englobe::after{
-        content: "";
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        border-bottom: 2px solid black;
-        border-right: 2px solid black;
-        margin-left: 90%;
-        margin-top: 1%;
-        z-index: -9999;
-    }
     .docto{
         margin-top: 1.5vh;
         width: 25vh;
@@ -66,7 +43,7 @@
         width: 100vw;
         height: 10vh;
         background-color: rgb(17, 112, 37);
-        box-shadow: 5px 5px 5px rgb(71, 97, 86);
+        box-shadow: 5px 5px 5px rgb(90, 138, 119);
     }
     .ul_pc{
         display: flex;
@@ -136,7 +113,7 @@
     }
     
     p{
-        font-size: 1.4em;
+        font-size: 20px;
         text-align: center;
         font-family: 'Quattrocento Sans', sans-serif;
         font-weight: lighter;
@@ -179,7 +156,7 @@
     }
     .title{
         font-size: 35px;
-        margin-top: 10vh;
+        margin-top: 2vh;
     }
     hr{
         width: 40%;
@@ -215,7 +192,7 @@
         padding: 2%;
     }
     .the{
-        font-size: 1.4em;
+        font-size: 1.7em;
     }
     /* CABINET */
     #cabinet{
