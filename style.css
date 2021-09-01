@@ -181,7 +181,7 @@
     }
     .title{
         font-size: 1.6em;
-        margin-top: 7.5vh;
+       /* margin-top: 2vh;*/
     }
     hr{
         width: 40%;
