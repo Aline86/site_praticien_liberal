@@ -31,7 +31,7 @@
     }
     .background{
         height: 100vh;
-        width: 99vw;
+        width: 100%;
         background-image: url('feuillage.jpg');
         display: flex;
         flex-direction: column;
