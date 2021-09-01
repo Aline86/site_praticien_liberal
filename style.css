@@ -17,7 +17,7 @@
         border-top: 2px solid black;
         border-left: 2px solid black;
         position: absolute;
-        margin-right: 5%;
+        margin-right: 5vw;
         z-index: -9999;
     }
     .englobe::after{
@@ -28,8 +28,8 @@
         height: 30px;
         border-bottom: 2px solid black;
         border-right: 2px solid black;
-        margin-left: 90%;
-        margin-top: 1%;
+        margin-left: 90vw;
+        margin-top: 1vh;
         z-index: -9999;
     }
     .docto{
