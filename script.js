@@ -27,7 +27,7 @@ function myFunction(){
     else
     {
         document.querySelector(".nav_pc").style.backgroundImage = "url('menu.jpg')"
-        document.querySelector(".nav_pc").style.transition = "backgroundImage 5s ease-in-out 1s";
+       
     }
     setHref("accueil", "background")
     setHref("practice", "pratique")
