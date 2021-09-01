@@ -241,13 +241,13 @@
     }
     /* CONTACT */
     #contact{
-        height: 90vh;
+        height: 100vh;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 10vh;
+       
     }
     .inner{
         background-color: white;
