@@ -19,16 +19,6 @@ window.onscroll = function() {
 
 function myFunction(){
     var container = document.querySelector(".container");
-   
-    if (window.pageYOffset < container.offsetTop ) {
-        document.querySelector(".nav_pc").style.backgroundColor="rgb(17, 112, 37)"
-        document.querySelector(".nav_pc").style.backgroundImage = "none"
-    }
-    else
-    {
-        document.querySelector(".nav_pc").style.backgroundImage = "url('menu.jpg')"
-        document.querySelector(".nav_pc").style.transition = "backgroundImage 5s ease-in-out 1s";
-    }
     setHref("accueil", "background")
     setHref("practice", "pratique")
     setHref("therapy", "therapie")
