@@ -16,7 +16,7 @@
     .background{
         height: 100vh;
         width: 99vw;
-        background-image: url('feuilles.jpg');
+        background-image: url('feuillage.jpg');
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -26,8 +26,8 @@
         position: fixed;
         width: 100vw;
         height: 10vh;
-        background-color: rgb(141, 219, 158);
-        box-shadow: 5px 5px 5px rgb(74, 180, 139);
+        background-color: rgb(17, 112, 37);
+        box-shadow: 5px 5px 5px rgb(90, 138, 119);
     }
     .ul_pc{
         display: flex;
@@ -113,7 +113,7 @@
         margin-top: 5vh;
         width: 250px;
         height: 70px;
-        background-color: rgb(116, 46, 86);
+        background-color: black;
         border: none;
         border-radius: 3px;
         color: white;
@@ -226,7 +226,7 @@
     .background{
         height: 100vh;
         width: 100vw;
-        background-image: url('feuilles.jpg');
+        background-image: url('feuillage.jpg');
         padding-top: 20vh;
     }
     .nav_pc{
@@ -336,21 +336,21 @@
     position: fixed;
     right: -100%;
     width: 100%;
-    min-height: 50vh;
+    min-height: 35vh;
     color: white;
-    background-color: rgb(141, 219, 158);
+    background-color: rgb(17, 112, 37);
     display: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: .8rem;
     transition: ease-in-out 800ms;
     margin-top: 25px;
     }
 
     .nav li {
         text-transform: uppercase;
-        padding: 20px 0;
+        padding: 8px 0;
         text-align: center;
     }
 
@@ -368,7 +368,7 @@
         margin-top: 2vh;
         width: 250px;
         height: 40px;
-        background-color: rgb(116, 46, 86);
+        background-color: black;
         border: none;
         border-radius: 3px;
         color: white;
