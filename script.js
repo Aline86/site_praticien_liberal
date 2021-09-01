@@ -40,7 +40,8 @@ function setHref(idhref, idcontainer){
     if (window.pageYOffset + 10 >= document.getElementById(idcontainer).offsetTop) {
         document.querySelectorAll('.a').forEach(elem =>{
             elem.style.fontWeight = "lighter"
-            elem.style.textDecoration = "none"
+            elem.style.textDecoration = "none" 
+            elem.style.hover = "text-decoration: white"
         })
         document.getElementById(idhref).style.fontWeight = "bold"
         document.getElementById(idhref).style.textDecoration = "underline 2px"
