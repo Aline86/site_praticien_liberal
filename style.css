@@ -9,6 +9,26 @@
     margin: 0 auto;
 }
 @media only screen and (min-width: 780px) {
+    .englobe::before{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+     
+    }
+    .englobe::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        margin-left: 98%;
+
+
+    }
     .docto{
         margin-top: 1.5vh;
         width: 25vh;
@@ -156,7 +176,7 @@
     }
     .title{
         font-size: 35px;
-        margin-top: 2vh;
+        margin-top: 10vh;
     }
     hr{
         width: 40%;
