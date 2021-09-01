@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -15,9 +15,9 @@
         color: white;
         font-weight: bold;
         left: 5px;
-        top: 0.4vh;
-        font-size: 50px;
-        font-family: 'Allison', cursive;
+        top: 1.5vh;
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
     }
     .right{
         position: fixed;
