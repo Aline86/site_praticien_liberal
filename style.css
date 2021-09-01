@@ -183,7 +183,10 @@
         font-size: 1.6em;
        /* margin-top: 2vh;*/
     }
-    .more{
+    .more1{
+        margin-top: 4vh;
+    }
+    .more2{
         margin-top: 10vh;
     }
     hr{
