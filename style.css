@@ -9,9 +9,7 @@
     margin: 0 auto;
 }
 @media only screen and (min-width: 780px) {
-    .a:hover{
-        text-decoration: white!important;
-    }
+   
     .englobe::before{
         content: "";
         display: block;
