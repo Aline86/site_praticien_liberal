@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +10,20 @@
     margin: 0 auto;
 }
 @media only screen and (min-width: 780px) {
-   
+    .absolute{
+        position: fixed;
+        color: white;
+        font-weight: bold;
+        left: 5px;
+        top: 0.4vh;
+        font-size: 50px;
+        font-family: 'Allison', cursive;
+    }
+    .right{
+        position: fixed;
+        right: 5vh;
+        top: 0.2vh;
+    }
     .englobe::before{
         content: "";
         display: block;
@@ -73,9 +87,11 @@
     .ul_pc{
         display: flex;
         flex-direction: row;
+        width: 55%;
+        margin: 0 auto;
     }
     .li_pc{
-        width: 16.666%;
+        width: 20%;
         list-style: none;
         line-height: 10vh;
         text-align: center;
@@ -97,7 +113,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 2px;
-        
+        border: 3px solid gray;
     }
     /* ACCUEIL */
     h2{
