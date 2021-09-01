@@ -57,7 +57,7 @@
     .background{
         height: 100vh;
         width: 100%;
-        background-color: rgb('86, 109, 67');
+        background-color: rgb(86, 109, 67);
         display: flex;
         flex-direction: column;
         align-items: center;
