@@ -183,6 +183,9 @@
         font-size: 1.6em;
        /* margin-top: 2vh;*/
     }
+    .more{
+        margin-top: 1vh;
+    }
     hr{
         width: 40%;
         margin: 0 auto;
