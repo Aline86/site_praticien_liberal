@@ -20,7 +20,7 @@ window.onscroll = function() {
 function myFunction(){
     var container = document.querySelector(".container");
    
-    if (window.pageYOffset < container.offsetTop ) {
+    if (window.pageYOffset <= container.offsetTop ) {
         document.querySelector(".nav_pc").style.backgroundColor="rgb(17, 112, 37)"
         document.querySelector(".nav_pc").style.backgroundImage = "none"
     }
