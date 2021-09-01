@@ -66,6 +66,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        border-radius: 2px;
     }
     /* ACCUEIL */
     h2{
@@ -105,10 +106,7 @@
         margin-top: 5vh;
         text-align: center;
     }
-    .in{
-        padding: 6%;
-        border-radius: 3px;
-    }
+    
     p{
         font-size: 20px;
         text-align: center;
