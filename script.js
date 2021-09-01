@@ -37,6 +37,7 @@ function myFunction(){
 }
 
 function setHref(idhref, idcontainer){
+    console.log(idcontainer)
     if (window.pageYOffset >= document.getElementById(idcontainer).offsetTop ) {
         document.querySelectorAll('.a').forEach(elem =>{
             elem.style.fontWeight = "lighter"
