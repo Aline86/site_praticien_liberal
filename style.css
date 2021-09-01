@@ -142,6 +142,7 @@
     }
     .name_psy{
         font-size: 30px;
+        margin-bottom: 25px;
     }
     .name{
         display: flex;
@@ -177,8 +178,8 @@
         cursor: pointer;
     }
     .symbole{
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
         object-fit: cover;
         margin: 0 auto;
     }
