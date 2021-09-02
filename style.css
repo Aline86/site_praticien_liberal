@@ -10,6 +10,9 @@
     margin: 0 auto;
 }
 @media only screen and (min-width: 780px) {
+    .under:hover{
+        font-weight: bold!important;
+    }
     .absolute{
         position: fixed;
         color: white;
