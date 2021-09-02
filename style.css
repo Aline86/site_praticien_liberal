@@ -306,6 +306,9 @@
     .rond{
         display: none;
     }
+    .right, .absolute{
+        display: none;
+    }
     .under_title{
         font-weight: bold;
         text-align: center;
