@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -17,14 +17,14 @@
         position: fixed;
         color: white;
         font-weight: bold;
-        left: 5px;
-        top: 0.3vh;
-        font-size: 1.4em;
-        font-family: 'Noto Sans JP', sans-serif;
+        left: 2vw;
+        top: 4px;;
+        font-size: 1.6em;
+        font-family: 'Marck Script', cursive;
     }
     .right{
         position: fixed;
-        right: 5vh;
+        right: 2vw;
         top: 0.2vh;
     }
     .englobe::before{
