@@ -632,5 +632,12 @@
     .fas{
         font-size: 25px;
     }
+    .doctol{
+        width: 200px;
+        height: 75px;
+        object-fit: cover;
+  
+
+    }
     
 }
