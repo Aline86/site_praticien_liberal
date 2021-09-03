@@ -14,7 +14,18 @@ function init() {
 }
 window.onscroll = function() {
     myFunction()
-    
+    if(document.querySelector('.docto2') !=  undefined)
+    {
+        if(window.pageYOffset >= document.querySelector('.docto2').offsetTop + 50)
+        {
+            document.querySelector('.docto2').style.display = "none"
+        }
+        else
+        {
+            document.querySelector('.docto2').style.display = "block"
+        }
+        
+    }
 };
 
 function myFunction(){

@@ -7,6 +7,9 @@
     }
 
 @media only screen and (min-width: 780px) {
+    .docto2{
+        display: none!important;
+    }
     .none{
         display: none;
     }
@@ -321,7 +324,13 @@
     
 }
 @media only screen and (max-width: 780px) {
-    
+    .docto2{
+        position: fixed;
+        top: 25px;
+        left: 15px;
+        width: 22vh;
+        height: 50px;
+    }
     .container{
         width: 75%;
         margin: 0 auto;
