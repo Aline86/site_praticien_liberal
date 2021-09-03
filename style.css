@@ -348,7 +348,7 @@
     .background{
         height: 100vh;
         width: 100vw;
-        background-image: url('feuillage.jpg');
+        background: linear-gradient(#2b5353, #738d5d);
         padding-top: 20vh;
     }
     .nav_pc{
