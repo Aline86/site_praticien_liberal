@@ -307,6 +307,13 @@
     .more_contact{
         margin-top: 4.6vh!important;
     }
+    .doctol{
+        width: 22vw;
+        height: 75px;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
     
 }
 @media only screen and (max-width: 780px) {
