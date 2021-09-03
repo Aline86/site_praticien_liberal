@@ -5,11 +5,12 @@
     margin: 0;
     box-sizing: border-box;
     }
-.container{
-    width: 90%;
-    margin: 0 auto;
-}
+
 @media only screen and (min-width: 780px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
     .under:hover{
         font-weight: bold!important;
     }
@@ -317,6 +318,10 @@
     
 }
 @media only screen and (max-width: 780px) {
+    .container{
+        width: 75%;
+        margin: 0 auto;
+    }
     .rond{
         display: none;
     }
@@ -544,6 +549,7 @@
         text-align: center;
         font-family: 'Quattrocento Sans', sans-serif;
         font-weight: lighter;
+        
     }
     .symbole{
         width: 60px;
@@ -586,6 +592,7 @@
     }
     .the{
         font-size: 20px;
+        color: rgb(161, 161, 161);
     }
 
     /* CABINET */
