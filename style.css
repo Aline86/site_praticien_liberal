@@ -18,8 +18,8 @@
         color: white;
         font-weight: bold;
         left: 5px;
-        top: 1.5vh;
-        font-size: 20px;
+        top: 0.3vh;
+        font-size: 1.4em;
         font-family: 'Noto Sans JP', sans-serif;
     }
     .right{
@@ -83,20 +83,20 @@
     .nav_pc{
         position: fixed;
         width: 100vw;
-        height: 10vh;
+        height: 70px;
         background-image: url('menu.jpg');
         box-shadow: 5px 5px 5px rgb(71, 97, 86);
     }
     .ul_pc{
         display: flex;
         flex-direction: row;
-        width: 55%;
+        width: 60%;
         margin: 0 auto;
     }
     .li_pc{
         width: 20%;
         list-style: none;
-        line-height: 10vh;
+        line-height: 70px;
         text-align: center;
     }
     .a{
