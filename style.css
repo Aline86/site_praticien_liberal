@@ -7,6 +7,7 @@
     }
 
 @media only screen and (min-width: 1300px) {
+ 
     .docto2{
         display: none!important;
     }
@@ -130,6 +131,9 @@
         width: 100%; 
         left: 0; 
       }
+      .none{
+            background: transparent;
+      }
     .inside{
         width: 80vw;
         height: 70vh;
@@ -169,13 +173,14 @@
     }
     .name_psy{
         font-size: 30px;
-        margin-bottom: 25px;
+        
     }
     .name{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        font-weight: lighter;
     }
     .adresse{
         margin-top: 5vh;
@@ -197,12 +202,14 @@
         margin-top: 2vh;
         width: 20vw;
         height: 6vh;
-        background-color: black;
+        line-height: 6vh;;
+        background-color: white;
         border: none;
         border-radius: 3px;
-        color: white;
+        color: black;
         font-size: 25px;
         cursor: pointer;
+        border: 1px solid black;
     }
     .symbole{
         width: 50px;
@@ -214,6 +221,8 @@
         font-size: 25px;
         font-weight: bold;
         margin-top: 2vh;
+        color: black;
+        text-decoration: none;
     }
     /* PRATIQUE */
     #pratique{
@@ -341,6 +350,10 @@
     
 }
 @media only screen and (max-width: 1300px) {
+    .within{
+        border: 1px solid lightgrey;
+        padding: 5px;
+    }
     .docto2{
         position: fixed;
         top: 25px;
@@ -422,15 +435,16 @@
     }
 
     .burger {
-    background:#f1f1f1;
-    border: 2px solid black;
-    border-radius: 5px;
+    background:#fbfbfb;
+ 
+    border-radius: 2px;
     margin: 15px;
     z-index: 99;
     padding: 10px;
     
     position: fixed;
-    right: 5px;
+    right: 6.5vw;
+    border: 1px solid black;
     }
 
     .navicon {
@@ -438,10 +452,11 @@
     cursor: pointer;
     display: block;
     width: 45px;
-    height: 4px;
+    height: 1px;
     border-radius: 15px;
     background: black;
     position: relative;
+    
     }
 
     .navicon::before {
@@ -478,8 +493,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+       
     }
 
     .menu-btn:checked ~ .menu-icon .navicon {
@@ -502,9 +518,9 @@
     .nav {
     z-index: 99;
     position: fixed;
-    right: -100%;
-    width: 100%;
-    min-height: 35vh;
+    right: -50%;
+    width: 50%;
+    min-height: 30vh;
     color: white;
     background-color: #2b5353;
     display: none;
@@ -564,8 +580,13 @@
         font-family: 'Quattrocento Sans', sans-serif;
         font-weight: lighter;
     }
-    .psycho{
+    .psycho1{
         font-size: 15px;
+        margin-top: 5vh;
+    }
+    .psycho2{
+        font-size: 15px;
+        margin-bottom: 1vh;
     }
     .cabinet{
         font-size: 25px;
@@ -595,8 +616,8 @@
         
     }
     .symbole{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         object-fit: cover;
         margin: 0 auto;
     }
@@ -636,6 +657,7 @@
     .the{
         font-size: 20px;
         color: rgb(161, 161, 161);
+        margin-top: 2vh;
     }
 
     /* CABINET */
