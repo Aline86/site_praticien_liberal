@@ -350,6 +350,9 @@
     
 }
 @media only screen and (max-width: 1300px) {
+    .addm{
+        margin-bottom: 60px;
+    }
     .within{
         border: 1px solid lightgrey;
         padding: 5px;
