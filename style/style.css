@@ -92,7 +92,7 @@
         position: fixed;
         width: 100vw;
         height: 70px;
-        background-image: url('menu.jpg');
+        background-image: url('../img/menu.jpg');
         box-shadow: 5px 5px 5px rgb(71, 97, 86);
     }
     .ul_pc{
@@ -235,13 +235,13 @@
     }
     .title{
         font-size: 1.6em;
-       /* margin-top: 2vh;*/
+        margin-top: 1.7vh;
     }
     .more1{
-        margin-top: 2.5vh;
+        margin-top: 1.5vh;
     }
     .more2{
-        margin-top: 14.7vh;
+        margin-top: 22vh;
     }
     hr{
         width: 40%;
@@ -338,7 +338,7 @@
         font-size: 30px;
     }
     .more_contact{
-        margin-top: 4.8vh!important;
+        margin-top: 11vh!important;
     }
     .doctol{
         width: 22vw;
@@ -427,36 +427,33 @@
     }
 
     ul {
-    list-style: none;
+        list-style: none;
     }
 
     body {
-    font-family: "Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
     }
 
     .burger {
-    background:#fbfbfb;
- 
-    border-radius: 2px;
-    margin: 15px;
-    z-index: 99;
-    padding: 10px;
-    
-    position: fixed;
-    right: 6.5vw;
-    border: 1px solid black;
+        background:#fbfbfb;
+        border-radius: 2px;
+        margin: 15px;
+        z-index: 99;
+        padding: 10px;
+        position: fixed;
+        right: 6.5vw;
+        top: 15px;
+        border: 1px solid black;
     }
 
-    .navicon {
-        
-    cursor: pointer;
-    display: block;
-    width: 45px;
-    height: 1px;
-    border-radius: 15px;
-    background: black;
-    position: relative;
-    
+    .navicon {    
+        cursor: pointer;
+        display: block;
+        width: 45px;
+        height: 1px;
+        border-radius: 15px;
+        background: black;
+        position: relative;
     }
 
     .navicon::before {

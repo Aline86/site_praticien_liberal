@@ -10,7 +10,6 @@ function init() {
             elem.style.fontWeight = "bold"
             elem.style.textDecoration = "underline 1.5px"
             $("#menu-btn").prop('checked', false);
-            
         })
     })
 }
