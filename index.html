@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style/style.css">
   <link rel="shortcut icon" type="text-css" href="favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
   <script
 			  src="https://code.jquery.com/jquery-3.6.0.min.js"
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -130,14 +131,27 @@
         <div class="cab">
             <p class="the">Je vous accueille dans un cadre chaleureux et intimiste. L'espace a été adapté pour accueillir des enfants de tout âge ainsi que des adultes.
             </p>
-            <div class="flex">
-                <div class="pic">
-                </div>
-                <div class="pic"> 
-                </div>
-            </div>
-        </div>
+            <br />
+            <div id="slider" class="slider">
+              <a href="#barre" class="control_next">></a>
+              <a href="#barre" class="control_prev"><</a>
+              <ul>
+                  <li>
+                      <img src="img/photo1.jpeg" alt="photo1" />
+                  </li>
+                  <li>
+                      <img src="img/photo2.jpeg" alt="photo2" />
+                  </li>
+                  <li>
+                      <img src="img/photo3.jpeg" alt="photo3" />
+                  </li> 
+                  <li>
+                      <img src="img/photo4.jpeg" alt="photo4" />
+                  </li>  
+              </ul>  
+          </div>
       </div>
+    </div>
   
       <div id="contact">
         <h3 class="title more_contact">CONTACT</h3>
@@ -176,6 +190,47 @@
           <img class="rond trois" alt="feuilles" src="img/menu.jpg" />
         </div>
     </div>
+    <script>
+    jQuery(document).ready(function ($) {
+     var slideCount = $('#slider ul li').length;
+     var slideWidth = $('#slider ul li').width();
+     var slideHeight = $('#slider ul li').height();
+     var sliderUlWidth = slideCount * slideWidth;
+     
+     $('#slider').css({ width: slideWidth, height: slideHeight });
+     
+     $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+     
+      $('#slider ul li:last-child').prependTo('#slider ul');
+    
+      function moveLeft() {
+          $('#slider ul').animate({
+              left: + slideWidth
+          }, 500, function () {
+              $('#slider ul li:last-child').prependTo('#slider ul');
+              $('#slider ul').css('left', '');
+          });
+      };
+    
+      function moveRight() {
+          $('#slider ul').animate({
+              left: - slideWidth
+          }, 500, function () {
+              $('#slider ul li:first-child').appendTo('#slider ul');
+              $('#slider ul').css('left', '');
+          });
+      };
+    
+      $('a.control_prev').click(function () {
+          moveLeft();
+      });
+    
+      $('a.control_next').click(function () {
+          moveRight();
+      });
+    })
+    
+    </script>
 </body>
 
 </html>
