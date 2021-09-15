@@ -156,60 +156,55 @@
           </div>
       </div>
     </div>
-    <img class="rond trois none" alt="feuilles" src="img/menu.jpg" />
-      <div id="contact">
-        <h3 class="title more_contact">CONTACT</h3>
-        <hr />
-        <br />
-        <div class="flex">
-            <div class="inner">
-                <p><img class="telefon" src="img/tel.png" alt="telefon"/></p>
-                <h2 class="center the">Prise de rendez-vous par Doctolib</h2>
-                <p><a class="link" href="https://www.doctolib.fr/psychologue/tarnos/charlotte-durand?utm_campaign=website-button&amp;utm_source=charlotte-durand-website-button&amp;utm_medium=referral&amp;utm_content=option-2&amp;utm_term=charlotte-durand" src="https://pro.doctolib.fr/external_button/doctolib-blue-transparent.png"><img class="doctol" alt="lien doctolib" src="img/docto.jpg" /></a></p> 
-                <p>ou au : <b class="top">06 74 05 60 53 </b> </p>
-              </div>
-            <div class="inner">
-              <p class="font2 big3"><p><i class="fas fa-house-user"></i></p>
-              
-                  <span class="inline_b">
-                      <span class="contact the">Immeuble "Femmes d'un siècle" </span>
-                      <br />
-                      <span class="contact the">local 5 - 1er étage</span>
-                      <br />
-                      <span class="contact the">3, Boulevard Jacques Duclos</span>
-                      <br />
-                      <span class="contact the">40 220 TARNOS</span>
-                  </span>
-              </p> 
+    <div id="contact">
+      <h3 class="title more_contact">CONTACT</h3>
+      <hr />
+      <br />
+      <div class="flex">
+          <div class="inner">
+              <p><img class="telefon" src="img/tel.png" alt="telefon"/></p>
+              <h2 class="center the">Prise de rendez-vous par Doctolib</h2>
+              <p><a class="link" href="https://www.doctolib.fr/psychologue/tarnos/charlotte-durand?utm_campaign=website-button&amp;utm_source=charlotte-durand-website-button&amp;utm_medium=referral&amp;utm_content=option-2&amp;utm_term=charlotte-durand" src="https://pro.doctolib.fr/external_button/doctolib-blue-transparent.png"><img class="doctol" alt="lien doctolib" src="img/docto.jpg" /></a></p> 
+              <p>ou au : <b class="top">06 74 05 60 53 </b> </p>
             </div>
-              <div class="inner">
-                  <p class="font2 big3"><p><i class="fas fa-bus"></i></p>
-                      <span class="inline_b">
-                          <span class="contact the">Trambus ligne 2 </span>
-                          <br />
-                          <span class="contact the">Bus lignes 40 - 104 - 106</span>
-                          <br />
-                          <span class="contact the">Arrêt : Femmes d'un siècle</span>
-                      </span>
-                  </p> 
-              </div>
+          <div class="inner">
+            <p class="font2 big3"><p><i class="fas fa-house-user"></i></p>
+            
+                <span class="inline_b">
+                    <span class="contact the">Immeuble "Femmes d'un siècle" </span>
+                    <br />
+                    <span class="contact the">local 5 - 1er étage</span>
+                    <br />
+                    <span class="contact the">3, Boulevard Jacques Duclos</span>
+                    <br />
+                    <span class="contact the">40 220 TARNOS</span>
+                </span>
+            </p> 
           </div>
-          <img class="rond trois" alt="feuilles" src="img/menu.jpg" />
+            <div class="inner">
+                <p class="font2 big3"><p><i class="fas fa-bus"></i></p>
+                    <span class="inline_b">
+                        <span class="contact the">Trambus ligne 2 </span>
+                        <br />
+                        <span class="contact the">Bus lignes 40 - 104 - 106</span>
+                        <br />
+                        <span class="contact the">Arrêt : Femmes d'un siècle</span>
+                    </span>
+                </p> 
+            </div>
         </div>
-    </div>
-    <script>
-    jQuery(document).ready(function ($) {
-     var slideCount = $('#slider ul li').length;
-     var slideWidth = $('#slider ul li').width();
-     var slideHeight = $('#slider ul li').height();
-     var sliderUlWidth = slideCount * slideWidth;
-     
-     $('#slider').css({ width: slideWidth, height: slideHeight });
-     
-     $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-     
+        <img class="rond trois" alt="feuilles" src="img/menu.jpg" />
+      </div>
+  </div>
+  <script>
+  jQuery(document).ready(function ($) {
+    var slideCount = $('#slider ul li').length;
+    var slideWidth = $('#slider ul li').width();
+    var slideHeight = $('#slider ul li').height();
+    var sliderUlWidth = slideCount * slideWidth;
+    $('#slider').css({ width: slideWidth, height: slideHeight });
+    $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
       $('#slider ul li:last-child').prependTo('#slider ul');
-    
       function moveLeft() {
           $('#slider ul').animate({
               left: + slideWidth
@@ -218,7 +213,6 @@
               $('#slider ul').css('left', '');
           });
       };
-    
       function moveRight() {
           $('#slider ul').animate({
               left: - slideWidth
@@ -227,7 +221,6 @@
               $('#slider ul').css('left', '');
           });
       };
-    
       $('a.control_prev').click(function () {
           moveLeft();
       });
@@ -235,8 +228,7 @@
       $('a.control_next').click(function () {
           moveRight();
       });
-    })
-    
+  })
     </script>
 </body>
 
