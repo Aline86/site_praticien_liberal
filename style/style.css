@@ -385,7 +385,7 @@ u{
         margin: 0 auto;
         padding: 0;
         height: 65vh;
-        width: 80vw;
+        width: 60vw;
         list-style: none;
     }
     
@@ -395,7 +395,7 @@ u{
         float: left;
         margin: 0 auto;
         padding: 0;
-        width: 80vw;
+        width: 60vw;
         height: 65vh;
         background: rgb(255, 255, 255);
         text-align: center;
