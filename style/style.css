@@ -18,6 +18,9 @@ u{
     height: 30px;
     object-fit: cover;
 }
+b{
+    font-weight: bold;
+}
 @media only screen and (min-width: 1300px) {
     .top{
         margin-top: 20px;
