@@ -3,4 +3,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: http://www.psychologue-durand.fr/sitemap.xml
+Sitemap: https://www.psychologue-durand.fr/sitemap.xml

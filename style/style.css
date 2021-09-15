@@ -7,7 +7,9 @@
     }
 
 @media only screen and (min-width: 1300px) {
- 
+    .top{
+        margin-top: 20px;
+    }
     .docto2{
         display: none!important;
     }
@@ -212,8 +214,8 @@
         border: 1px solid black;
     }
     .symbole{
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         object-fit: cover;
         margin: 0 auto;
     }
