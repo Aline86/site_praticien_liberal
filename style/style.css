@@ -449,7 +449,7 @@ b{
     .addm{
         margin-bottom: 60px;
     }
-    .within{
+    .seance{
         border: 1px solid lightgrey;
         padding: 5px;
     }
@@ -717,6 +717,7 @@ b{
         height: 30px;
         object-fit: cover;
         margin: 0 auto;
+        margin-bottom: 10px;
     }
     .tel{
         margin-top: 2vh;
