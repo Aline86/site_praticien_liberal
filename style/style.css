@@ -10,6 +10,9 @@
     font-family: 'Quattrocento Sans', sans-serif!important;
   
 }
+u{
+    text-decoration: underline 1px;
+}
 @media only screen and (min-width: 1300px) {
     .top{
         margin-top: 20px;
