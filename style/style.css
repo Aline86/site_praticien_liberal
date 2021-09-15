@@ -262,7 +262,7 @@ u{
         margin-top: 1.5vh;
     }
     .more2{
-        margin-top: 5vh;
+        margin-top: 14.8vh;
     }
     hr{
         width: 40%;
@@ -384,8 +384,8 @@ u{
         position: relative;
         margin: 0 auto;
         padding: 0;
-        height: 65vh;
-        width: 60vw;
+        height: 50vh;
+        width: 40vw;
         list-style: none;
     }
     
@@ -395,8 +395,8 @@ u{
         float: left;
         margin: 0 auto;
         padding: 0;
-        width: 60vw;
-        height: 65vh;
+        width: 40vw;
+        height: 50vh;
         background: rgb(255, 255, 255);
         text-align: center;
     }
