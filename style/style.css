@@ -225,6 +225,7 @@
         height: 30px;
         object-fit: cover;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
     .tel{
         font-size: 25px;
