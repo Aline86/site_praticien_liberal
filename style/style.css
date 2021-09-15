@@ -724,6 +724,10 @@ b{
         font-size: 20px;
         font-weight: bold;
     }
+    .smaller_pic{
+        width: 40px;
+        height: 40px;
+    }
      /* PRATIQUE */
      #pratique{
         margin-top: 2vh;
