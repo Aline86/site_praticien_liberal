@@ -798,6 +798,7 @@ b{
         justify-content: center;
         text-align: center;
         height: auto;
+        margin-top: 50px;
     }
     .contact{
         font-size: 1.5em;
