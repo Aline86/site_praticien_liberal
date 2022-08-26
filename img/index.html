@@ -13,7 +13,7 @@
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			  crossorigin="anonymous">
   </script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="slick/slick.js"></script>
   <script src="js/script.js"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,7 +86,7 @@
               <p class="the addm"><u>FORMATION</u><i>"Les adolescents auteurs de violences sexuelles"</i> au CH Charles Perens, Bordeaux.</p>       
               <h4 class="under_title">UNE PRATIQUE ADAPTEE A CHACUN</h4>
               <p class="the addm">Formée à la psychanalyse, ma pratique s'appuie sur l'écoute et la singularité de la personne.</p>  
-              <p class="the addm">J'accueille avec neutralité et bienveillance toute personne en souffrance ou souhaitant une espace de parole à soi.</p>
+              <p class="the addm">J'accueille avec neutralité et bienveillance toute personne en souffrance ou souhaitant un espace de parole à soi.</p>
             </div>
         </div>
         <img class="rond trois none" alt="feuilles" src="img/menu.jpg" />
@@ -141,36 +141,36 @@
             <div class="contains">
               <div class="slider-for">
                   <div>
-                      <img src="img/1.jpg">
+                      <img src="images/1.jpg">
                   </div>
                   <div>
-                      <img src="img/2.jpg">    
+                      <img src="images/2.jpg">    
                   </div>
                   <div>
-                      <img src="img/3.jpg">    
+                      <img src="images/3.jpg">    
                   </div>
                   <div>
-                      <img src="img/4.jpg">    
+                      <img src="images/4.jpg">    
                   </div>
                   <div>
-                      <img src="img/5.jpg">    
+                      <img src="images/5.jpg">    
                   </div>
                 </div>
                 <div class="slider-nav">
                   <div class="inside-nav">
-                      <img src="img/1.jpg">
+                      <img src="images/1.jpg">
                   </div>
                   <div class="inside-nav">
-                      <img src="img/2.jpg">    
+                      <img src="images/2.jpg">    
                   </div>
                   <div class="inside-nav">
-                      <img src="img/3.jpg">    
+                      <img src="images/3.jpg">    
                   </div class="inside-nav">
                   <div class="inside-nav">
-                      <img src="img/4.jpg">    
+                      <img src="images/4.jpg">    
                   </div>
                   <div class="inside-nav">
-                      <img src="img/5.jpg">    
+                      <img src="images/5.jpg">    
                   </div>
                 </div>
           </div>
@@ -218,24 +218,45 @@
       </div>
   </div>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-208309182-2"></script>
-  <script type="text/javascript">
-        $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: true,
-        centerMode: false,
-        focusOnSelect: true
-        });
-    </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-208309182-2');
+  jQuery(document).ready(function ($) {
+    var slideCount = $('#slider ul li').length;
+    var slideWidth = $('#slider ul li').width();
+    var slideHeight = $('#slider ul li').height();
+    var sliderUlWidth = slideCount * slideWidth;
+    $('#slider').css({ width: slideWidth, height: slideHeight });
+    $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+      $('#slider ul li:last-child').prependTo('#slider ul');
+      function moveLeft() {
+          $('#slider ul').animate({
+              left: + slideWidth
+          }, 500, function () {
+              $('#slider ul li:last-child').prependTo('#slider ul');
+              $('#slider ul').css('left', '');
+          });
+      };
+      function moveRight() {
+          $('#slider ul').animate({
+              left: - slideWidth
+          }, 500, function () {
+              $('#slider ul li:first-child').appendTo('#slider ul');
+              $('#slider ul').css('left', '');
+          });
+      };
+      $('a.control_prev').click(function () {
+          moveLeft();
+      });
     
+      $('a.control_next').click(function () {
+          moveRight();
+      });
+  })
+    </script>
 </body>
 
 </html>

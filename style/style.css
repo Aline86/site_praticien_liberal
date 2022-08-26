@@ -376,74 +376,37 @@ b{
         margin-top: 10px;
 
     }
-    /* slider */
-
-    #slider {
-        z-index: 1;
-        width: 50vw;
-        position: relative;
-        overflow: hidden;
+    .slider-for{
+        width: 800px;
+        height: 500px;
+       
         margin: 0 auto;
-        border-radius: 4px;
-        
-      }
-      
-    #slider ul {
-        position: relative;
-        margin: 0 auto;
-        padding: 0;
-        height: 50vh;
-        width: 40vw;
-        list-style: none;
     }
-    
-    #slider ul li {
-        position: relative;
-        display: block;
-        float: left;
-        margin: 0 auto;
-        padding: 0;
-        width: 40vw;
-        height: 50vh;
-        background: rgb(255, 255, 255);
-        text-align: center;
-    }
-    #slider ul li img{
+    .slider-for img{
         width: 100%;
-        height: 100%;
+        height: 500px;
         object-fit: cover;
     }
-      a.control_prev, a.control_next {
-        position: absolute;
-        top: 35%;
-        z-index: 9999;
-        display: block;
-        padding: 4% 3%;
-        width: auto;
-        height: auto;
-        background: #c7c7c7;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 18px;
-        opacity: 0.8;
-        cursor: pointer;
-      }
-      
-      a.control_prev:hover, a.control_next:hover {
-        opacity: 1;
-        -webkit-transition: all 0.2s ease;
-      }
-      
-      a.control_prev {
-        border-radius: 0 2px 2px 0;
-      }
-      
-      a.control_next {
-        right: 0;
-        border-radius: 2px 0 0 2px;
-      }
-    
+    .slider-nav{
+        width: 800px;
+        height: 100px;
+        
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .inside-nav img{
+        width: 90%;
+        height: 100px;
+        margin: 5px auto;
+        object-fit: cover;
+    }
+    .slick-next::before, .slick-prev::before {
+        color: lightgray!important;
+        height: 40px!important;
+    }
+    .slick-dots{
+        top: 120px!important;
+    }
 }
 @media only screen and (max-width: 1300px) {
     .addm{
@@ -816,72 +779,46 @@ b{
 
     }
     /* slider */
-
-    #slider {
-        z-index: 1;
-        width: 100vw;
-        position: relative;
-        overflow: hidden;
-        margin: 0 auto;
-        border-radius: 4px;
-        border: transparent;
-        height: 250px;
-      }
-      
-    #slider ul {
-        position: relative;
-        margin: 0 auto;
-        padding: 0;
-        height: 250px;
-        width: 70vw;
-        list-style: none;
+   /* slider */
+   .contains{
+    width: 75vw;
     }
+    .slider-for{
+        width:75vw;
+        height: 200px;
     
-    #slider ul li {
-        position: relative;
-        display: block;
-        float: left;
         margin: 0 auto;
-        padding: 0;
-        width: 70vw;
-        height: auto;
-        background: rgb(255, 255, 255);
-        text-align: center;
     }
-    #slider ul li img{
-        width: 100%;
+    .slider-for img{
+        width: 75vw;
         height: 250px;
         object-fit: cover;
     }
-      a.control_prev, a.control_next {
-        position: absolute;
-        top: 35%;
-        z-index: 9999;
-        display: block;
-        padding: 4% 3%;
-        width: auto;
-        height: auto;
-        background: #c7c7c7;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 18px;
-        opacity: 0.8;
-        cursor: pointer;
-      }
-      
-      a.control_prev:hover, a.control_next:hover {
-        opacity: 1;
-        -webkit-transition: all 0.2s ease;
-      }
-      
-      a.control_prev {
-        border-radius: 0 2px 2px 0;
-      }
-      
-      a.control_next {
-        right: 0;
-        border-radius: 2px 0 0 2px;
-      }
+    .slider-nav{
+        width: 75vw;
+        height: 80px;
+
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    /*.inside-nav.slick-slide{
+        width: 15vw!important;
+        margin: 0 auto!important;
+    }*/
+    .inside-nav img{
+        width: 18vw;
+        margin: 0 auto!important;
+        height: 60px;
+    
+        object-fit: cover;
+    }
+    /* .slick-list.draggable{
+        padding: 0!important;
+    }*/
+    .slick-next::before, .slick-prev::before {
+            color: lightgray!important;
+            height: 40px!important;
+            margin: 0 auto;
+        }
     
 }
