@@ -21,7 +21,20 @@ u{
 b{
     font-weight: bold;
 }
+
 @media only screen and (min-width: 1300px) {
+    #video{
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100vh;
+        width: 99vw;
+        margin: 0 auto;
+    }
     .top{
         margin-top: 20px;
     }
@@ -54,7 +67,7 @@ b{
         top: 0.2vh;
         z-index: 99999;
     }
-    .englobe::before{
+    .englobe::before, .englobetherapie::before{
         content: "";
         display: block;
         position: absolute;
@@ -66,7 +79,7 @@ b{
         left: 5vh;
         z-index: -9999;
     }
-    .englobe::after{
+    .englobe::after, .englobetherapie::after{
         content: "";
         display: block;
         position: absolute;
@@ -166,6 +179,7 @@ b{
         justify-content: center;
         border-radius: 2px;
         border: 3px solid gray;
+        z-index: 1;
     }
     /* ACCUEIL */
     h2{
@@ -221,7 +235,7 @@ b{
     }
    
     button{
-        margin-top: 2vh;
+        margin-top: 10px;
         width: 20vw;
         height: 6vh;
         line-height: 6vh;;
@@ -409,6 +423,13 @@ b{
     }
 }
 @media only screen and (max-width: 1300px) {
+    #video{
+        display: none;
+        
+    }
+    .space {
+        width: 5px!important;
+    }
     .addm{
         margin-bottom: 60px;
     }
@@ -609,7 +630,6 @@ b{
        
     }
     button{
-        margin-top: 2vh;
         width: 200px;
         height: 5vh;
         line-height: 5vh;
@@ -621,6 +641,7 @@ b{
         cursor: pointer;
         border: 1px solid black;
         padding: 0;
+        margin-top: 10px;
         }
     h2{
         font-size: 20px;
@@ -781,7 +802,9 @@ b{
     /* slider */
    /* slider */
    .contains{
+    
     width: 75vw;
+    max-width: 500px;
     }
     .slider-for{
         width:75vw;
@@ -790,6 +813,7 @@ b{
         margin: 0 auto;
     }
     .slider-for img{
+
         width: 75vw;
         height: 250px;
         object-fit: cover;
@@ -808,7 +832,7 @@ b{
     .inside-nav img{
         width: 18vw;
         margin: 0 auto!important;
-        height: 60px;
+        height: 80px;
     
         object-fit: cover;
     }
@@ -822,3 +846,244 @@ b{
         }
     
 }
+
+
+/* ANIMATION */
+
+
+.psycho1 div{
+
+    animation: flash 3s linear;
+}
+
+@keyframes flash {
+    0% {
+        font-weight: 0;
+        transform: scale(1.2);
+        
+    }
+    90% {
+        font-weight: 0;
+      
+        transform: scale(0.9);
+    }
+    100% {
+        font-weight: 0;
+        transform: scale(0.8);
+    }
+}
+
+.psycho1 div:nth-child(1) {
+    animation-delay: 0.1s;
+
+}
+
+.psycho1 div:nth-child(2) {
+    animation-delay: 0.2s;
+ 
+}
+
+.psycho1 div:nth-child(3) {
+    animation-delay: 0.3s;
+
+}
+
+.psycho1 div:nth-child(4) {
+    animation-delay: 0.4s;
+
+}
+
+.psycho1 div:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.psycho1 div:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.psycho1 div:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.psycho1 div:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+ul li div:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.psycho1 div:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.psycho1 div:nth-child(11) {
+    animation-delay: 1.1s;
+}
+
+.psycho1 div:nth-child(12) {
+    animation-delay: 1.2s;
+}
+
+.psycho1 div:nth-child(13) {
+    animation-delay: 1.3s;
+}
+
+.psycho1 div:nth-child(14) {
+    animation-delay: 1.4s;
+}
+
+.psycho1 div:nth-child(15) {
+    animation-delay: 1.5s;
+}
+
+.psycho1 div:nth-child(16) {
+    animation-delay: 1.6s;
+}
+
+.psycho1 div:nth-child(17) {
+    animation-delay: 1.7s;
+}
+.psycho1 div:nth-child(18) {
+    animation-delay: 1.8s;
+}
+.psycho1 div:nth-child(19) {
+    animation-delay: 1.9s;
+}
+.psycho1 div:nth-child(20) {
+    animation-delay: 2s;
+}
+.psycho1 div:nth-child(21) {
+    animation-delay: 2.1s;
+}
+.psycho1 div:nth-child(22) {
+    animation-delay: 2.2s;
+}
+.psycho1 div:nth-child(23) {
+    animation-delay: 2.3s;
+}
+.psycho1{
+    display: flex;
+}
+
+.space{
+    width: 15px;
+}
+
+
+.button_acc:hover div{
+    
+    transform: scale(1.1);
+    
+}
+@media only screen and (min-width: 1300px) {
+    .button_acc div{
+        color: black;
+    }
+    .button_acc{
+     
+   
+      
+        box-shadow: none;
+        animation: but 1s linear;
+    }
+ 
+    @keyframes but {
+     
+       
+        0% {
+            width: 0px;
+            height: 0px;
+            animation-delay: 0s;
+            font-size: 0;
+        }
+        100% {
+            border: black 1px solid;
+            width: 20vw;
+            height: 6vh;
+            animation-delay: 1s;
+            font-size: 0;
+        }
+    }
+    
+    .docto{
+        transition: all 1s linear;
+    }
+    .docto:hover{
+        transform: scale(1.2);
+    }
+}
+.button_acc:hover{
+    color: rgb(71, 97, 86);
+    border: rgb(71, 97, 86) 1px solid;
+    text-decoration: underline;
+}
+
+
+.ul_pc .li_pc{
+
+    animation: big 5s linear infinite;
+}
+
+@keyframes big {
+    0% {
+        font-weight: 0;
+        transform: scale(1.1);
+        
+    }
+    90% {
+        font-weight: 0;
+      
+        transform: scale(0.9);
+    }
+    100% {
+        font-weight: 0;
+        transform: scale(0.8);
+    }
+}
+
+.ul_pc .li_pc:nth-child(1) {
+    animation-delay: 0.1s;
+
+}
+
+.ul_pc .li_pc:nth-child(2) {
+    animation-delay: 0.2s;
+ 
+}
+
+.ul_pc .li_pc:nth-child(3) {
+    animation-delay: 0.3s;
+
+}
+
+.ul_pc .li_pc:nth-child(4) {
+    animation-delay: 0.4s;
+
+}
+
+#pratique .initiate.englobe::before, #therapie .initiate.englobetherapie::before{
+    animation: moveright 1s forwards;
+}
+
+@keyframes moveright {
+    0% {
+        transform: translateY(-100px);
+      }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  #pratique .initiate.englobe::after, #therapie .initiate.englobetherapie::after{
+    animation: moveleft 0.4s backwards;
+}
+
+@keyframes moveleft {
+    0% {
+        transform: translateY(100px);
+      }
+    100% {
+      transform: translateX(0);
+    }
+  }
+

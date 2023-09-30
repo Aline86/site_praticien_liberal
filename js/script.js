@@ -15,6 +15,7 @@ function init() {
 }
 window.onscroll = function() {
     myFunction()
+ 
     if(document.querySelector('.docto2') !=  undefined)
     {
         if(window.pageYOffset >= document.querySelector('.docto2').offsetTop + 50)
@@ -26,7 +27,21 @@ window.onscroll = function() {
             document.querySelector('.docto2').style.display = "block"
         } 
     }
+  
+ 
+    
 };
+function corners(container){
+    if(document.querySelector(container).classList.contains("initiate")){
+    
+        document.querySelector(container).classList.remove("initiate")
+    }
+    else
+    {
+        document.querySelector(container).classList.add("initiate")
+    } 
+    
+}
 function hover_under_after_click(){
     document.querySelectorAll('.a').forEach(elem =>{
         elem.addEventListener('mouseenter', function(){
@@ -56,7 +71,14 @@ function myFunction(){
 }
 
 function setHref(idhref, idcontainer){
+  
     if (window.pageYOffset + 10 >= document.getElementById(idcontainer).offsetTop ) {
+        if(idcontainer == "therapie"){
+            corners(".englobetherapie");
+        }
+        if(idcontainer == "pratique"){
+            corners(".englobe");
+        }
         document.querySelectorAll('.a').forEach(elem =>{
             elem.style.fontWeight = "lighter"
             elem.style.textDecoration = "none" 
