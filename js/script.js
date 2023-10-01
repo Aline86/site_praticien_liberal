@@ -3,6 +3,15 @@ function init() {
     hover_under_after_click()
     document.querySelectorAll('.a').forEach(elem =>{
         elem.addEventListener('click', function(e){
+            
+            if(e.target.id == "therapy"){
+                corners(".englobetherapie");
+             
+            }
+            if(e.target.id == "practice"){
+                corners(".englobe");
+              
+            }
             document.querySelectorAll('.a').forEach(elem =>{
                 elem.style.fontWeight = "lighter"
                 elem.style.textDecoration = "none"
@@ -34,9 +43,11 @@ window.onscroll = function() {
 function corners(container){
     if(document.querySelector(container).classList.contains("initiate")){
     
-        document.querySelector(container).classList.remove("initiate")
+        document.querySelectorAll(".initiate").forEach(element => {
+            element.classList.remove("initiate");
+        });
     }
-    else
+    else 
     {
         document.querySelector(container).classList.add("initiate")
     } 
@@ -73,12 +84,7 @@ function myFunction(){
 function setHref(idhref, idcontainer){
   
     if (window.pageYOffset + 10 >= document.getElementById(idcontainer).offsetTop ) {
-        if(idcontainer == "therapie"){
-            corners(".englobetherapie");
-        }
-        if(idcontainer == "pratique"){
-            corners(".englobe");
-        }
+       
         document.querySelectorAll('.a').forEach(elem =>{
             elem.style.fontWeight = "lighter"
             elem.style.textDecoration = "none" 
@@ -89,4 +95,9 @@ function setHref(idhref, idcontainer){
 }
 $( document ).ready(function() {
     hover_under_after_click()
+    document.querySelector(".absolute").addEventListener("click", function(){
+        document.querySelectorAll(".initiate").forEach(element => {
+            element.classList.remove("initiate");
+        });
+    }) 
 });
